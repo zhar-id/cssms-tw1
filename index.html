@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="tailwind.config.js"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          fontFamily: {
+            Poppins: ["Poppins", "sans-serif"],
+          },
+          extend: {
+            colors: {
+              clifford: "#da373d",
+            },
+            spacing: {
+              50: "12.4rem",
+              94: "22rem",
+              100: "32rem",
+            },
+          },
+        },
+      };
+    </script>
+    <style>
+      body::-webkit-scrollbar {
+        display: none;
+      }
+    </style>
+  </head>
+  <body class="font-Poppins" style="overflow-x: hidden">
+    <section>
+      <div class="bg-[#ffeac9] absolute z-0 w-4/6 rounded-e-xl p-4 top-14">
+        <img class="opacity-5" src="assets/Images/bg-testimonial.png" alt="" />
+      </div>
+      <div
+        class="z-10 flex mt-36 items-center w-full justify-end mx-auto relative"
+      >
+        <div class="text me-8">
+          <h1 class="text-4xl font-medium">What they say about us</h1>
+          <p class="w-72 mt-5 text-gray-500">
+            We always provide the best service and always maintain the quality
+            of coffee
+          </p>
+        </div>
+        <div class="columns-3 me-4 gap-16">
+          <div class="photo relative">
+            <img class="w-50" src="assets/Images/testimonial-1.png" alt="" />
+            <div
+              class="p-1.5 bg-[#ffc876]/50 absolute z-20 left-6 text bottom-5 rounded-2xl"
+            >
+              <div class="bg-[#ffc876] -pe-0 p-2.5 rounded-xl">
+                <h3 class="font-medium">Naura</h3>
+                <p class="w-48 text-sm">
+                  I really love the cappucino, the coffe was very smooth
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="photo relative">
+            <img class="w-52" src="assets/Images/testimonial-2.png" alt="" />
+            <div
+              class="p-1.5 bg-[#ffc876]/50 absolute z-20 left-6 text bottom-5 rounded-2xl"
+            >
+              <div class="bg-[#ffc876] -pe-0 p-2.5 rounded-xl">
+                <h3 class="font-medium">John</h3>
+                <p class="w-48 text-sm">this coffee shop is very convenient</p>
+              </div>
+            </div>
+          </div>
+          <div class="photo relative">
+            <img class="w-52" src="assets/Images/testimonial-3.png" alt="" />
+            <div
+              class="p-1.5 bg-[#ffc876]/50 absolute z-20 left-4 text bottom-5 rounded-2xl"
+            >
+              <div class="bg-[#ffc876] -pe-0 p-2.5 rounded-xl">
+                <h3 class="font-medium">Azura</h3>
+                <p class="w-48 text-sm">the coffee menu here is very much</p>
+              </div>
+            </div>
+          </div>
+          <div class="absolute flex gap-2 -bottom-4 right-94">
+            <div class="bg-[#FF902A] rounded-full h-2 w-2">
+              <br />
+            </div>
+            <div class="bg-[#FF902A]/25 rounded-full h-2 w-2">
+              <br />
+            </div>
+            <div class="bg-[#FF902A]/25 rounded-full h-2 w-2">
+              <br />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- testi end -->
+    <section class="mb-32 relative">
+      <img
+        class="mt-52 mx-auto w-5/6"
+        src="assets/Images/bg-newsletter.png"
+        alt=""
+      />
+      <div class="absolute top-32 right-96">
+        <div class="text-3xl tracking-wider text-white font-semibold">
+          Subscribe to get 50% discount price
+        </div>
+        <div
+          class="flex justify-between bg-white w-100 rounded-3xl p-1 mx-auto mt-7"
+        >
+          <div class="font-semibold text-[#83827F] px-9 ps-4 py-3">
+            Email address
+          </div>
+          <div
+            class="bg-[#2F2105] font-semibold text-white px-9 py-3 rounded-full"
+          >
+            Order now
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
